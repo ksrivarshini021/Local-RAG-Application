@@ -19,24 +19,28 @@ Qdrant container- Docker
 #### Setup steps
 ##### 1. Clone repo
 ```git clone https://github.com/ksrivarshini021/Local-RAG-Application.git
-cd rag-app```
+cd rag-app
+```
 
 ##### 2. Create environment
 ```uv venv
-source .venv/bin/activate```
+source .venv/bin/activate
+```
 
 ##### 3. Install dependencies
-`uv add fastapi uvicorn streamlit requests python-dotenv
+```uv add fastapi uvicorn streamlit requests python-dotenv
 uv add qdrant-client llama-index
 uv add llama-index-embeddings-huggingface
-uv add llama-index-llms-ollama`
+uv add llama-index-llms-ollama
+```
 
 ##### 4. Start Qdrant
 `docker run -p 6333:6333 qdrant/qdrant`
 
 #### 5. Start Ollama
-`ollama serve
-ollama pull llama3`
+```ollama serve
+ollama pull llama3
+```
 
 ##### 6. Start backend(FastAPI)
 `uvicorn api.main:app --reload --port 8080`
