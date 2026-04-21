@@ -1,0 +1,23 @@
+[project]
+name = "rag-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.136.0",
+    "llama-index>=0.14.21",
+    "llama-index-embeddings-huggingface>=0.7.0",
+    "llama-index-embeddings-openai>=0.6.0",
+    "llama-index-llms-ollama>=0.10.1",
+    "llama-index-llms-openai>=0.7.5",
+    "llama-index-vector-stores-qdrant>=0.10.0",
+    "openai>=2.32.0",
+    "pypdf>=6.10.2",
+    "python-dotenv>=1.2.2",
+    "python-multipart>=0.0.26",
+    "qdrant-client>=1.17.1",
+    "requests>=2.33.1",
+    "streamlit>=1.56.0",
+    "uvicorn>=0.45.0",
+]
