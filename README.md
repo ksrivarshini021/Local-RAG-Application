@@ -18,12 +18,12 @@ Qdrant container- Docker
 
 #### Setup steps
 ##### 1. Clone repo
-`git clone https://github.com/ksrivarshini021/Local-RAG-Application.git
-cd rag-app`
+```git clone https://github.com/ksrivarshini021/Local-RAG-Application.git
+cd rag-app```
 
 ##### 2. Create environment
-`uv venv
-source .venv/bin/activate`
+```uv venv
+source .venv/bin/activate```
 
 ##### 3. Install dependencies
 `uv add fastapi uvicorn streamlit requests python-dotenv
